@@ -2,6 +2,10 @@ name: Development container
 on:
     workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
     build_backend:
         name: 🏗 Build and Push Backend Dev Image
